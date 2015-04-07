@@ -1,0 +1,146 @@
+@font-face {
+    font-family: "Capture";
+    src: url("../fonts/Capture_it.ttf");
+    font-weight: 400;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: rgba(200, 200, 200, 1);
+}
+
+body #wrapper{
+    width: 800px;
+    margin: auto;
+}
+
+/* --- header --- */
+    body #wrapper header #logo{
+        height: 150px;
+        width: 800px;
+        background: url("../images/Header-bg.jpg");
+        border-radius: 10px 10px 0 0;
+    }
+
+    body #wrapper header nav{
+        width: 100%;
+        height: 42px;
+        text-align: center;
+        border-radius: 0 0 10px 10px;
+        background: -webkit-linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,1)); /*Safari 5.1-6*/
+        background: -o-linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,1)); /*Opera 11.1-12*/
+        background: -moz-linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,1)); /*Fx 3.6-15*/
+        background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,1)); /*Standard*/
+    }
+        body #wrapper header nav ul{
+            list-style: none;
+        }
+            body #wrapper header nav ul li{
+                margin: 0 5px 0 5px;
+                display: inline-block;
+            }
+                body #wrapper header nav ul li a{
+                    outline: none;
+                    margin-top: 3px;
+                   /* color: rgba(255, 150, 0, 0.9);*/
+                    text-shadow: 3px 3px 2px rgba(100, 100, 100, 1);
+                    text-decoration: none;
+                    display: inline-block;
+                    padding: 0 15px 0 15px;
+                    font-family: Capture, Arial, sans-serif;
+                    font-size: 30px;
+                    border-radius: 10px;
+                  /*  background: rgba(169,169,169,0.7);*/
+                }
+                body #wrapper header nav ul li.selected a{
+                    color: black;
+                }
+                body #wrapper header nav ul li.selected a:hover{
+                    color: #ff9700;
+                }
+/* --- iFrame --- */
+body #wrapper #main-frame{
+    width: 800px;
+    height: 600px;
+    background: none;
+}
+
+
+/* --- main --- */
+body main section{
+    position: relative;
+    box-sizing: border-box;
+    vertical-align: top;
+    width: 380px;
+    height: 410px;
+    margin: 20px 8px 8px 8px;
+    text-align:justify;
+    background: rgba(255, 255, 255, 0.7);
+    border: 2px solid black;
+    display: inline-block;
+    border-radius: 5px;
+}
+    body main section .sec-header{
+        height: 30px;
+        text-align: center;
+        font-family: Capture, Arial, sans-serif;
+        font-size: 22px;
+        padding-top: 5px;
+        color: rgba(255,151,0,1);
+        background: -webkit-linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,1)); /*Safari 5.1-6*/
+        background: -o-linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,1)); /*Opera 11.1-12*/
+        background: -moz-linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,1)); /*Fx 3.6-15*/
+        background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,1)); /*Standard*/
+    }
+    body main section .sec-img{
+        margin: 5px;
+        width: 350px;
+        height: 150px;
+        background: url("../images/logo-small.png");
+    }
+    body main section .sec-info{
+        padding: 5px;
+    }
+    body main section .sec-more-info{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        text-decoration: none;
+        color: red;
+        padding: 5px;
+    }
+    body main section .sec-info figure img{
+        display: inline-block;
+        width: 100px;
+        margin: 8px;
+    }
+    body main section .sec-info figure p{
+        display: inline-block;
+        text-align: center;
+        font-size: 30px;
+        vertical-align: top;
+        padding-top: 35px;
+        padding-left: 20px;
+    }
+
+/* --- footer --- */
+body #wrapper footer{
+    position: absolute;
+    bottom: 0;
+    width: 800px;
+    margin-top:  10px;
+    padding-top: 10px;
+    font-family: Capture, Arial, sans-serif;
+    text-align: center;
+    background: -webkit-linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,1)); /*Safari 5.1-6*/
+    background: -o-linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,1)); /*Opera 11.1-12*/
+    background: -moz-linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,1)); /*Fx 3.6-15*/
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,1)); /*Standard*/
+    border-radius: 0 0 10px 10px;
+    color: rgba(255,151,0,1);
+    height: 30px;
+}

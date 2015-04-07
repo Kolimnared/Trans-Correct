@@ -1,0 +1,57 @@
+@font-face {
+    font-family: "Capture";
+    src: url("../fonts/Capture_it.ttf");
+    font-weight: 400;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: rgba(200, 200, 200, 1);
+}
+
+body #wrapper main #sec-contacts{
+    width: 350px;
+    margin: 25px;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.7);
+    border: 2px solid black;
+    display: inline-block;
+    border-radius: 5px;
+}
+    body #wrapper main #sec-contacts #contacts-header{
+        height: 30px;
+        text-align: center;
+        font-family: Capture, Arial, sans-serif;
+        font-size: 22px;
+        padding-top: 5px;
+        color: rgba(255,151,0,1);
+        background: -webkit-linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,1)); /*Safari 5.1-6*/
+        background: -o-linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,1)); /*Opera 11.1-12*/
+        background: -moz-linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,1)); /*Fx 3.6-15*/
+        background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,1)); /*Standard*/
+    }
+        body #wrapper main #sec-contacts form fieldset label{
+            margin-top: 15px;
+            margin-left: 10px;
+            display: block;
+        }
+        body #wrapper main #sec-contacts form fieldset input{
+            margin-top: 5px;
+            margin-left: 10px;
+            display: block;
+            height: 25px;
+            padding: 5px;
+            font-size: 15px;
+            width: 300px;
+            margin: auto;
+        }
+        body #wrapper main #sec-contacts form fieldset input[type="submit"]{
+            padding: 5px;
+            width: 300px;
+            height: 30px;
+            margin: 10px auto;
+        }
